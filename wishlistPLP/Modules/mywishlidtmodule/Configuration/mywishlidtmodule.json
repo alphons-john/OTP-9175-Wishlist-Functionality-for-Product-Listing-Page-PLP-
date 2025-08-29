@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": { 
+        "mywishlidtmodule.config": {
+            "group": "extensions",
+            "subtab": "mywishlidtmodule_subtab",
+            "type": "string",
+            "title": "mywishlidtmodule_Title",
+            "description": "Config description example",
+            "default": "Default config example"
+        }
+    }
+}

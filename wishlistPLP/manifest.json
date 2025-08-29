@@ -1,0 +1,105 @@
+{
+    "name": "wishlistPLP",
+    "fantasyName": "Wishlist in PLP",
+    "vendor": "JJ",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": ">=25.1.0",
+        "SCS": ">=25.1.0"
+    },
+    "version": "1.0.0",
+    "description": "an add to wishlist in the PLP page",
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": [
+                "services/mywishlidtmodule.Service.ss"
+            ]
+        }
+    },
+    "configuration": {
+        "files": [
+            "Modules/mywishlidtmodule/Configuration/mywishlidtmodule.json"
+        ]
+    },
+    "templates": {
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/mywishlidtmodule/Templates/jj_wishlistplp_mywishlidtmodule.tpl"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/mywishlidtmodule/Templates/jj_wishlistplp_mywishlidtmodule.tpl"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/mywishlidtmodule/Templates/jj_wishlistplp_mywishlidtmodule.tpl"
+                ]
+            }
+        }
+    },
+    "sass": {
+        "entry_points": {
+            "shopping": "Modules/mywishlidtmodule/Sass/_wishlistplp-mywishlidtmodule.scss",
+            "myaccount": "Modules/mywishlidtmodule/Sass/_wishlistplp-mywishlidtmodule.scss",
+            "checkout": "Modules/mywishlidtmodule/Sass/_wishlistplp-mywishlidtmodule.scss"
+        },
+        "files": [
+            "Modules/mywishlidtmodule/Sass/_wishlistplp-mywishlidtmodule.scss"
+        ]
+    },
+    "javascript": {
+        "entry_points": {
+            "shopping": "Modules/mywishlidtmodule/JavaScript/JJ.wishlistPLP.mywishlidtmodule.js",
+            "myaccount": "Modules/mywishlidtmodule/JavaScript/JJ.wishlistPLP.mywishlidtmodule.js",
+            "checkout": "Modules/mywishlidtmodule/JavaScript/JJ.wishlistPLP.mywishlidtmodule.js"
+        },
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/mywishlidtmodule/JavaScript/JJ.wishlistPLP.mywishlidtmodule.js",
+                    "Modules/mywishlidtmodule/JavaScript/mywishlidtmodule.View.js",
+                    "Modules/mywishlidtmodule/JavaScript/JJ.wishlistPLP.mywishlidtmodule.Model.js",
+                    "Modules/mywishlidtmodule/JavaScript/JJ.wishlistPLP.mywishlidtmodule.SS2Model.js"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/mywishlidtmodule/JavaScript/JJ.wishlistPLP.mywishlidtmodule.js",
+                    "Modules/mywishlidtmodule/JavaScript/mywishlidtmodule.View.js",
+                    "Modules/mywishlidtmodule/JavaScript/JJ.wishlistPLP.mywishlidtmodule.Model.js",
+                    "Modules/mywishlidtmodule/JavaScript/JJ.wishlistPLP.mywishlidtmodule.SS2Model.js"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/mywishlidtmodule/JavaScript/JJ.wishlistPLP.mywishlidtmodule.js",
+                    "Modules/mywishlidtmodule/JavaScript/mywishlidtmodule.View.js",
+                    "Modules/mywishlidtmodule/JavaScript/JJ.wishlistPLP.mywishlidtmodule.Model.js",
+                    "Modules/mywishlidtmodule/JavaScript/JJ.wishlistPLP.mywishlidtmodule.SS2Model.js"
+                ]
+            }
+        }
+    },
+    "ssp-libraries": {
+        "entry_point": "Modules/mywishlidtmodule/SuiteScript/JJ.wishlistPLP.mywishlidtmodule.js",
+        "files": [
+            "Modules/mywishlidtmodule/SuiteScript/JJ.wishlistPLP.mywishlidtmodule.js",
+            "Modules/mywishlidtmodule/SuiteScript/mywishlidtmodule.ServiceController.js"
+        ]
+    },
+    "suitescript2": {
+        "files": [
+            "Modules/mywishlidtmodule/SuiteScript2/mywishlidtmodule.Service.ss"
+        ]
+    }
+}
